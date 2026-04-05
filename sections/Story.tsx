@@ -184,7 +184,7 @@ export default function Story() {
           <div className="story-profile-left flex-1 text-center md:max-w-70">
             <div className="story-avatar mx-auto mb-6">
               <Image
-                src="/images/groom.jpg"
+                src="/images/groom.jpeg"
                 alt="Abhisek"
                 width={200}
                 height={200}
@@ -219,7 +219,7 @@ export default function Story() {
           <div className="story-profile-right flex-1 text-center md:max-w-70">
             <div className="story-avatar mx-auto mb-6">
               <Image
-                src="/images/bride.jpg"
+                src="/images/bride.jpeg"
                 alt="Rituparna"
                 width={200}
                 height={200}
