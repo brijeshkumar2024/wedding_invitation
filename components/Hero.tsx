@@ -177,7 +177,7 @@ export default function Hero({ isRevealed }: Readonly<HeroProps>) {
         <h1 className="hero-headline mb-6 leading-[1.04]">
           <span className="hero-name-lux">
             <span className="hero-name-initial">R</span>
-            <span className="hero-name-rest">itupurna</span>
+            <span className="hero-name-rest">ituparna</span>
           </span>
           <span className="hero-name-ampersand"> &amp; </span>
           <span className="hero-name-lux">
