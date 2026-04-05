@@ -35,7 +35,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Ritupurna & Abhisek | Engagement Invitation",
+  title: "Rituparna & Abhisek | Engagement Invitation",
   description: "A cinematic luxury wedding invitation experience"
 };
 
@@ -48,3 +48,4 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     </html>
   );
 }
+

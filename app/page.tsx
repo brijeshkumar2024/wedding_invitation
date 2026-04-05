@@ -28,7 +28,7 @@ function PetalsCanvas() {
         y: Math.random() * window.innerHeight,
         size: Math.random() * 18 + 14,      // larger: 14–32px for premium feel
         speedY: Math.random() * 0.62 + 0.25,
-        speedX: Math.random() * 0.45 - 0.225,
+        speedX: Math.random() * 0.9 - 0.45,
         rot: Math.random() * Math.PI * 2,
         rotSpeed: (Math.random() * 0.015 + 0.006) * (Math.random() < 0.5 ? 1 : -1),
         alpha: Math.random() * 0.48 + 0.32,  // 0.32–0.8 for richer depth
@@ -45,7 +45,7 @@ function PetalsCanvas() {
         y: Math.random() * window.innerHeight,
         size: Math.random() * 12 + 6,       // smaller: 6–18px
         speedY: Math.random() * 0.32 + 0.12,  // slower for depth
-        speedX: Math.random() * 0.25 - 0.125,
+        speedX: Math.random() * 0.6 - 0.3,
         rot: Math.random() * Math.PI * 2,
         rotSpeed: (Math.random() * 0.008 + 0.002) * (Math.random() < 0.5 ? 1 : -1),
         alpha: Math.random() * 0.28 + 0.09, // 0.09–0.37 for softer appearance

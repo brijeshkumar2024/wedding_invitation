@@ -6,7 +6,7 @@ import { initGsap } from "@/lib/animations";
 
 const events = [
   { time: "7:00 PM", title: "Guest Arrival", desc: "Warm welcome for friends and family at Sai Kalyan Mandap." },
-  { time: "7:30 PM", title: "Engagement Ceremony", desc: "Ritupurna and Abhisek exchange rings in the presence of loved ones." },
+  { time: "7:30 PM", title: "Engagement Ceremony", desc: "Rituparna and Abhisek exchange rings in the presence of loved ones." },
   { time: "8:30 PM", title: "Blessings & Family Moments", desc: "A heartfelt celebration with the Singh and Mohanty family." },
   { time: "9:00 PM onwards", title: "Dinner & Celebration", desc: "An evening of joy, music, and togetherness in Puri." }
 ];
@@ -84,3 +84,4 @@ export default function Timeline() {
     </section>
   );
 }
+

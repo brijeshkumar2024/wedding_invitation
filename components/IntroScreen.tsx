@@ -300,7 +300,7 @@ export default function IntroScreen({ onEnter, onStartMusic }: Readonly<IntroScr
           </p>
           <div className="relative mx-auto my-4 h-px w-16 bg-linear-to-r from-transparent via-[#d4af37]/50 to-transparent" />
           <h1 className="relative mb-6 font-heading text-4xl font-bold tracking-wide text-white md:text-5xl">
-            Ritupurna &amp; Abhisek
+            Rituparna &amp; Abhisek
           </h1>
           <button type="button" onClick={handleEnter} className="relative invite-rect-btn">
             Open Invitation
@@ -316,3 +316,4 @@ export default function IntroScreen({ onEnter, onStartMusic }: Readonly<IntroScr
     </div>
   );
 }
+

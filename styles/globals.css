@@ -788,6 +788,7 @@ body::before {
   color: #4a2c0a;
   line-height: 1.15;
   font-weight: 400;
+  text-transform: capitalize;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -1057,11 +1058,11 @@ body::before {
 
 .hero-cinematic .hero-name-initial {
   font-family: var(--font-cinzel), var(--font-playfair), serif;
-  font-size: 0.68em;
+  font-size: 0.86em;
   font-weight: 700;
   line-height: 1;
   text-transform: uppercase;
-  margin-right: 0.04em;
+  margin-right: 0.03em;
   color: #ffe08a;
   text-shadow:
     0 0 22px rgba(255, 215, 0, 0.58),
@@ -1221,4 +1222,3 @@ body::before {
     letter-spacing: 0.18em;
   }
 }
-

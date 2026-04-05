@@ -181,7 +181,7 @@ export default function Story() {
         <div className="story-profiles flex flex-col items-center gap-12 md:flex-row md:items-start md:justify-center md:gap-0">
 
           {/* Groom */}
-          <div className="story-profile-left flex-1 text-center md:max-w-[280px]">
+          <div className="story-profile-left flex-1 text-center md:max-w-70">
             <div className="story-avatar mx-auto mb-6">
               <Image
                 src="/images/groom.jpg"
@@ -199,7 +199,7 @@ export default function Story() {
           </div>
 
           {/* Gold heart */}
-          <div className="story-heart-icon flex flex-1 items-center justify-center pt-0 md:max-w-[120px] md:pt-[4.5rem]">
+          <div className="story-heart-icon flex flex-1 items-center justify-center pt-0 md:max-w-30 md:pt-18">
             <svg viewBox="0 0 48 44" width="50" height="46" aria-hidden="true">
               <defs>
                 <filter id="hg" x="-40%" y="-40%" width="180%" height="180%">
@@ -216,18 +216,18 @@ export default function Story() {
           </div>
 
           {/* Bride */}
-          <div className="story-profile-right flex-1 text-center md:max-w-[280px]">
+          <div className="story-profile-right flex-1 text-center md:max-w-70">
             <div className="story-avatar mx-auto mb-6">
               <Image
                 src="/images/bride.jpg"
-                alt="Ritupurna"
+                alt="Rituparna"
                 width={200}
                 height={200}
                 className="h-full w-full object-cover"
                 loading="lazy"
               />
             </div>
-            <h3 className="story-name mb-3">Ritupurna</h3>
+            <h3 className="story-name mb-3">Rituparna</h3>
             <p className="story-quote">
               &ldquo;In him, I found my love, my best friend, and my home.&rdquo;
             </p>
@@ -247,3 +247,4 @@ export default function Story() {
     </section>
   );
 }
+

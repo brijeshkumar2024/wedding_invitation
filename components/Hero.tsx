@@ -217,3 +217,4 @@ export default function Hero({ isRevealed }: Readonly<HeroProps>) {
     </section>
   );
 }
+

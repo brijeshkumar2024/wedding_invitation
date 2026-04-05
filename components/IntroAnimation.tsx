@@ -66,8 +66,8 @@ export default function IntroAnimation({ onOpen }: IntroAnimationProps) {
         </div>
         <p className="intro-line mb-2 text-xs uppercase tracking-[0.36em] text-[#D4AF37] md:text-sm">Shri Ganeshaya Namah</p>
         <p className="intro-line mb-3 text-xs uppercase tracking-[0.4em] text-white/70 md:text-sm">Together with our families</p>
-        <div className="couple-name-wrap" data-text="Ritupurna & Abhisek">
-          <h1 className="intro-couple shimmer-text mb-4 font-heading text-4xl md:text-6xl">Ritupurna &amp; Abhisek</h1>
+        <div className="couple-name-wrap" data-text="Rituparna & Abhisek">
+          <h1 className="intro-couple shimmer-text mb-4 font-heading text-4xl md:text-6xl">Rituparna &amp; Abhisek</h1>
         </div>
         <p className="intro-date mb-2 text-sm uppercase tracking-[0.24em] text-white/75 md:text-base">20th April 2026 (Monday) | 7:00 PM onwards | Puri</p>
         <p className="intro-date mb-10 text-xs uppercase tracking-[0.2em] text-white/65 md:text-sm">With Warm Regards - Singh &amp; Mohanty Family</p>
@@ -86,3 +86,4 @@ export default function IntroAnimation({ onOpen }: IntroAnimationProps) {
     </div>
   );
 }
+

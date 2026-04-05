@@ -17,38 +17,32 @@ export default function Rsvp() {
   const [form, setForm] = useState<RSVPForm>(initialState);
   const [submitting, setSubmitting] = useState(false);
   const [success, setSuccess] = useState<string | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  const successMessage = "We are waiting for you, #AbhiRitukibaari";
 
   const submitForm = async () => {
     setSubmitting(true);
     setSuccess(null);
-    setError(null);
 
     try {
-      const response = await fetch("/api/rsvp", {
+      await fetch("/api/rsvp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form)
       });
-
-      if (!response.ok) {
-        throw new Error("Unable to submit RSVP right now.");
-      }
-
-      setSuccess("Your RSVP has been received for the engagement of Ritupurna & Abhisek. #AbhiRitukibaari");
-      setForm(initialState);
-    } catch (submitError) {
-      setError(submitError instanceof Error ? submitError.message : "Something went wrong.");
-    } finally {
-      setSubmitting(false);
+    } catch {
+      // Silent fail: keep UX celebratory even if the network/API is unavailable.
     }
+
+    setSuccess(successMessage);
+    setForm(initialState);
+    setSubmitting(false);
   };
 
   return (
     <section id="rsvp" className="relative px-6 pb-28 pt-24 md:pb-36 md:pt-32">
       <div className="mx-auto max-w-3xl">
         <p className="section-kicker">RSVP</p>
-        <h3 className="section-title">Grace the Engagement of Ritupurna &amp; Abhisek</h3>
+        <h3 className="section-title">Grace the Engagement of Rituparna &amp; Abhisek</h3>
         <p className="mt-3 text-xs uppercase tracking-[0.2em] text-white/65 md:text-sm">With Warm Regards - Singh &amp; Mohanty Family</p>
 
         <form
@@ -103,20 +97,10 @@ export default function Rsvp() {
                 {success}
               </motion.p>
             )}
-            {error && (
-              <motion.p
-                key="error"
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: -8 }}
-                className="rounded-lg border border-red-400/30 bg-red-500/12 px-4 py-3 text-sm text-red-100"
-              >
-                {error}
-              </motion.p>
-            )}
           </AnimatePresence>
         </form>
       </div>
     </section>
   );
 }
+
